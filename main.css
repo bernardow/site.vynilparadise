@@ -5,8 +5,12 @@
     font-family: sans-serif;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 .container{
-    width: 960px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -60,6 +64,7 @@ header input{
     border-radius: 5px;
     border-right: 2px solid rgb(220, 220, 220);
     border-bottom: 2px solid rgb(220, 220, 220);
+    width: 50%;
 }
 
 .product-grid{
@@ -68,13 +73,14 @@ header input{
     column-gap: 1.5%;
     row-gap: 2.5%;
     padding: 12px;
+    justify-content: center;
 }
 
 .card{
     border-radius: 10px;
     background-color: whitesmoke;
     width: 100%;
-    padding: 8px;
+    padding: 12px;
     border-right: 2px solid rgb(220, 220, 220);
     border-bottom: 2px solid rgb(220, 220, 220);
 }
@@ -101,6 +107,10 @@ header input{
     font-size: 18px;
 }
 
+.card img{
+    width: 100%;
+}
+
 .card button{
     background-color: yellowgreen;
     border: none;
@@ -119,7 +129,7 @@ header input{
 
 footer{
     background-color: yellowgreen;
-    padding: 24px;
+    padding: 1.5em;
 }
 
 .footer-content{
@@ -143,4 +153,106 @@ footer a{
     display: flex;
     justify-content: center;
     margin: 18px 0;
+}
+
+@media screen and (max-width: 619px) {
+    header .container{
+        display: block;
+    }
+
+    header button{
+        display: none;
+    }
+
+    header input{
+        padding: 4px;
+        margin-left: 8px;
+        width: 7.5em;
+    }
+
+    .about-content{
+        display: block;
+        width: 100%;
+    }
+
+    .about-content img{
+        width: 100%;
+    }
+
+    .card img,
+    .card h3,
+    .card .price,
+    .card p
+    {
+        width: 100%;
+    }
+
+    header h1{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    p, li, a, address{
+        font-size: 14px;
+    }
+
+    footer .container{
+        width: 95%;
+    }
+
+    header .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .content{
+        margin-bottom: 2em;
+    }
+
+    .product-grid{
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 1.5%;
+        padding: .75em;
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (min-width: 620px) and (max-width: 1023px){
+    .product-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 47.6%);
+        row-gap: 1.5%;
+        column-gap: 1.5%;
+        padding: 0.75em;
+    }
+
+    header button{
+        display: none;
+    }
+
+    header input{
+        padding: 4px;
+        margin-left: 8px;
+        width: 7.5em;
+    }
+
+    .about-content{
+        display: block;
+        width: 100%;
+    }
+
+    .about-content img{
+        width: 100%;
+    }
+
 }
