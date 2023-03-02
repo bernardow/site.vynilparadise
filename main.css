@@ -69,7 +69,7 @@ header input{
 
 .product-grid{
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(4, 24%);
     column-gap: 1.5%;
     row-gap: 2.5%;
     padding: 12px;
