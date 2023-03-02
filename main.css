@@ -69,7 +69,8 @@ header input{
 
 .product-grid{
     display: grid;
-    grid-template-columns: repeat(4, 24%);
+    grid-template-columns: repeat(4, 23.875%);
+    grid-template-rows: repeat(2, 48.75%);
     column-gap: 1.5%;
     row-gap: 2.5%;
     padding: 12px;
@@ -80,7 +81,7 @@ header input{
     border-radius: 10px;
     background-color: whitesmoke;
     width: 100%;
-    padding: 12px;
+    padding: 1rem;
     border-right: 2px solid rgb(220, 220, 220);
     border-bottom: 2px solid rgb(220, 220, 220);
 }
@@ -134,8 +135,6 @@ footer{
 
 .footer-content{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-top: 12px;
 }
 
@@ -221,6 +220,7 @@ footer a{
     .product-grid{
         display: grid;
         grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 16%);
         row-gap: 1.5%;
         padding: .75em;
         margin-bottom: 48px;
@@ -231,6 +231,7 @@ footer a{
     .product-grid{
         display: grid;
         grid-template-columns: repeat(2, 47.6%);
+        grid-template-rows: repeat(3, 32.3%);
         row-gap: 1.5%;
         column-gap: 1.5%;
         padding: 0.75em;
